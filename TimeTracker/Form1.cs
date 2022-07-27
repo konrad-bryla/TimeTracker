@@ -75,5 +75,12 @@ namespace TimeTracker
             timerVisual.Text = "1800";
             onBreak = true;
         }
+
+        private void btnSkip_Click(object sender, EventArgs e)
+        {
+            time = 0;
+            timerVisual.Text = "0";
+            aTmr.Stop();
+        }
     }
 }

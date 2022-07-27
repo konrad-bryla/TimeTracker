@@ -38,6 +38,7 @@ namespace TimeTracker
             this.longBreak15 = new System.Windows.Forms.Button();
             this.aTmr = new System.Windows.Forms.Timer(this.components);
             this.longbreak30 = new System.Windows.Forms.Button();
+            this.btnSkip = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Start
@@ -117,11 +118,22 @@ namespace TimeTracker
             this.longbreak30.UseVisualStyleBackColor = true;
             this.longbreak30.Click += new System.EventHandler(this.longbreak30_Click);
             // 
+            // btnSkip
+            // 
+            this.btnSkip.Location = new System.Drawing.Point(91, 289);
+            this.btnSkip.Name = "btnSkip";
+            this.btnSkip.Size = new System.Drawing.Size(136, 23);
+            this.btnSkip.TabIndex = 9;
+            this.btnSkip.Text = "Skip";
+            this.btnSkip.UseVisualStyleBackColor = true;
+            this.btnSkip.Click += new System.EventHandler(this.btnSkip_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 302);
+            this.ClientSize = new System.Drawing.Size(311, 325);
+            this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.longbreak30);
             this.Controls.Add(this.longBreak15);
             this.Controls.Add(this.shortBreak);
@@ -146,6 +158,7 @@ namespace TimeTracker
         private System.Windows.Forms.Button longBreak15;
         private System.Windows.Forms.Timer aTmr;
         private System.Windows.Forms.Button longbreak30;
+        private System.Windows.Forms.Button btnSkip;
     }
 }
 
