@@ -21,8 +21,10 @@ namespace TimeTracker
 
         private void start_Click(object sender, EventArgs e)
         {
-            time = Convert.ToInt32(timerVisual.Text);
-            aTmr.Start();
+            if (time != 0) {
+                time = Convert.ToInt32(timerVisual.Text);
+                aTmr.Start();
+            } 
         }
 
         private void stop_Click(object sender, EventArgs e)
