@@ -12,7 +12,7 @@ namespace TimeTracker
     {
         int time;
         bool onBreak;
-        SoundPlayer sPlayer = new SoundPlayer(Path.GetFullPath("shortNotif.wav"));
+        //SoundPlayer sPlayer = new SoundPlayer(Path.GetFullPath("shortNotif.wav"));
         public Form1()
         {
             InitializeComponent();
@@ -37,14 +37,14 @@ namespace TimeTracker
             {
                 aTmr.Stop();
                 onBreak = false;
-                sPlayer.Play();
+                //sPlayer.Play();
                 MessageBox.Show("Hey your break is up! Lets get some good work in! ", "Time for some work");
                 
             }
             else if(time < 0)
             {
                 onBreak = true;
-                sPlayer.Play();
+                //sPlayer.Play();
                 MessageBox.Show("Your pomodoro time is up, take a break. No secret work!", "Time for a Break");
             }
         }
