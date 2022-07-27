@@ -77,7 +77,7 @@ namespace TimeTracker
             this.pomodoro.Name = "pomodoro";
             this.pomodoro.Size = new System.Drawing.Size(136, 23);
             this.pomodoro.TabIndex = 5;
-            this.pomodoro.Text = "Pomodoro (25 mins)";
+            this.pomodoro.Text = "Pomodoro 25m";
             this.pomodoro.UseVisualStyleBackColor = true;
             this.pomodoro.Click += new System.EventHandler(this.pomodoro_Click);
             // 
@@ -87,7 +87,7 @@ namespace TimeTracker
             this.shortBreak.Name = "shortBreak";
             this.shortBreak.Size = new System.Drawing.Size(136, 23);
             this.shortBreak.TabIndex = 6;
-            this.shortBreak.Text = "Short Break";
+            this.shortBreak.Text = "Short Break 5m";
             this.shortBreak.UseVisualStyleBackColor = true;
             this.shortBreak.Click += new System.EventHandler(this.shortBreak_Click);
             // 
@@ -97,7 +97,7 @@ namespace TimeTracker
             this.longBreak15.Name = "longBreak15";
             this.longBreak15.Size = new System.Drawing.Size(136, 23);
             this.longBreak15.TabIndex = 7;
-            this.longBreak15.Text = "Long Break 15";
+            this.longBreak15.Text = "Long Break 15m";
             this.longBreak15.UseVisualStyleBackColor = true;
             this.longBreak15.Click += new System.EventHandler(this.longBreak15_Click);
             // 
@@ -113,7 +113,7 @@ namespace TimeTracker
             this.longbreak30.Name = "longbreak30";
             this.longbreak30.Size = new System.Drawing.Size(136, 23);
             this.longbreak30.TabIndex = 8;
-            this.longbreak30.Text = "Long Break 30";
+            this.longbreak30.Text = "Long Break 30m";
             this.longbreak30.UseVisualStyleBackColor = true;
             this.longbreak30.Click += new System.EventHandler(this.longbreak30_Click);
             // 
@@ -130,7 +130,7 @@ namespace TimeTracker
             this.Controls.Add(this.timerVisual);
             this.Controls.Add(this.Start);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Time Tracker ";
             this.ResumeLayout(false);
             this.PerformLayout();
 
