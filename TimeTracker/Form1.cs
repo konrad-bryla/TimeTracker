@@ -60,8 +60,8 @@ namespace TimeTracker
         private void shortBreak_Click(object sender, EventArgs e)
         {
             aTmr.Stop();
-            time = 1;
-            timerVisual.Text = "1";
+            time = 300;
+            timerVisual.Text = "300";
             onBreak = true;
         }
 
