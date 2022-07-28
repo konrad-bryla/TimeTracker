@@ -12,7 +12,7 @@ namespace TimeTracker
     {
         int time;
         bool onBreak;
-        //SoundPlayer sPlayer = new SoundPlayer(Path.GetFullPath("shortNotif.wav"));
+        SoundPlayer sPlayer = new SoundPlayer(Properties.Resources.shortAudio);
         public Form1()
         {
             InitializeComponent();
@@ -22,7 +22,6 @@ namespace TimeTracker
         private void start_Click(object sender, EventArgs e)
         {
             if (time != 0) {
-                time = Convert.ToInt32(timerVisual.Text);
                 aTmr.Start();
             } 
         }
@@ -39,33 +38,36 @@ namespace TimeTracker
             {
                 aTmr.Stop();
                 onBreak = false;
-                //sPlayer.Play();
+                sPlayer.Play();
                 MessageBox.Show("Hey your break is up! Lets get some good work in! ", "Time for some work");
                 
             }
             else if(time < 0)
             {
                 onBreak = true;
-                //sPlayer.Play();
+                sPlayer.Play();
                 MessageBox.Show("Your pomodoro time is up, take a break. No secret work!", "Time for a Break");
             }
         }
 
         private void pomodoro_Click(object sender, EventArgs e)
         {
+            aTmr.Stop();
             time = 1500;
             timerVisual.Text = "1500";
         }
 
         private void shortBreak_Click(object sender, EventArgs e)
         {
-            time = 300;
-            timerVisual.Text = "300";
+            aTmr.Stop();
+            time = 1;
+            timerVisual.Text = "1";
             onBreak = true;
         }
 
         private void longBreak15_Click(object sender, EventArgs e)
         {
+            aTmr.Stop();
             time = 900;
             timerVisual.Text = "900";
             onBreak = true;
@@ -73,6 +75,7 @@ namespace TimeTracker
 
         private void longbreak30_Click(object sender, EventArgs e)
         {
+            aTmr.Stop();
             time = 1800;
             timerVisual.Text = "1800";
             onBreak = true;
@@ -80,9 +83,10 @@ namespace TimeTracker
 
         private void btnSkip_Click(object sender, EventArgs e)
         {
+            aTmr.Stop();
             time = 0;
             timerVisual.Text = "0";
-            aTmr.Stop();
+            
         }
     }
 }
