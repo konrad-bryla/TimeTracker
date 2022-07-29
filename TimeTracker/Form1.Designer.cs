@@ -43,7 +43,13 @@ namespace TimeTracker
             // 
             // Start
             // 
-            this.Start.Location = new System.Drawing.Point(91, 67);
+            this.Start.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Start.AutoSize = true;
+            this.Start.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Start.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.Start.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.Start.ForeColor = System.Drawing.SystemColors.Window;
+            this.Start.Location = new System.Drawing.Point(19, 115);
             this.Start.Name = "Start";
             this.Start.Size = new System.Drawing.Size(136, 47);
             this.Start.TabIndex = 0;
@@ -53,20 +59,29 @@ namespace TimeTracker
             // 
             // timerVisual
             // 
-            this.timerVisual.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.timerVisual.Location = new System.Drawing.Point(69, 12);
+            this.timerVisual.BackColor = System.Drawing.Color.MidnightBlue;
+            this.timerVisual.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.timerVisual.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.timerVisual.ForeColor = System.Drawing.SystemColors.Window;
+            this.timerVisual.Location = new System.Drawing.Point(72, 30);
             this.timerVisual.Name = "timerVisual";
             this.timerVisual.ReadOnly = true;
-            this.timerVisual.Size = new System.Drawing.Size(180, 49);
+            this.timerVisual.Size = new System.Drawing.Size(180, 46);
             this.timerVisual.TabIndex = 3;
             this.timerVisual.Text = "00:00";
             this.timerVisual.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // stop
             // 
-            this.stop.Location = new System.Drawing.Point(91, 120);
+            this.stop.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.stop.AutoSize = true;
+            this.stop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.stop.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.stop.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.stop.ForeColor = System.Drawing.SystemColors.Window;
+            this.stop.Location = new System.Drawing.Point(171, 115);
             this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(136, 47);
+            this.stop.Size = new System.Drawing.Size(135, 47);
             this.stop.TabIndex = 4;
             this.stop.Text = "Stop";
             this.stop.UseVisualStyleBackColor = true;
@@ -74,9 +89,15 @@ namespace TimeTracker
             // 
             // pomodoro
             // 
-            this.pomodoro.Location = new System.Drawing.Point(91, 173);
+            this.pomodoro.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pomodoro.AutoSize = true;
+            this.pomodoro.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pomodoro.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.pomodoro.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.pomodoro.ForeColor = System.Drawing.SystemColors.Window;
+            this.pomodoro.Location = new System.Drawing.Point(72, 209);
             this.pomodoro.Name = "pomodoro";
-            this.pomodoro.Size = new System.Drawing.Size(136, 23);
+            this.pomodoro.Size = new System.Drawing.Size(186, 35);
             this.pomodoro.TabIndex = 5;
             this.pomodoro.Text = "Pomodoro 25m";
             this.pomodoro.UseVisualStyleBackColor = true;
@@ -84,9 +105,15 @@ namespace TimeTracker
             // 
             // shortBreak
             // 
-            this.shortBreak.Location = new System.Drawing.Point(91, 202);
+            this.shortBreak.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.shortBreak.AutoSize = true;
+            this.shortBreak.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.shortBreak.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.shortBreak.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.shortBreak.ForeColor = System.Drawing.SystemColors.Window;
+            this.shortBreak.Location = new System.Drawing.Point(72, 250);
             this.shortBreak.Name = "shortBreak";
-            this.shortBreak.Size = new System.Drawing.Size(136, 23);
+            this.shortBreak.Size = new System.Drawing.Size(186, 35);
             this.shortBreak.TabIndex = 6;
             this.shortBreak.Text = "Short Break 5m";
             this.shortBreak.UseVisualStyleBackColor = true;
@@ -94,9 +121,15 @@ namespace TimeTracker
             // 
             // longBreak15
             // 
-            this.longBreak15.Location = new System.Drawing.Point(91, 231);
+            this.longBreak15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.longBreak15.AutoSize = true;
+            this.longBreak15.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.longBreak15.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.longBreak15.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.longBreak15.ForeColor = System.Drawing.SystemColors.Window;
+            this.longBreak15.Location = new System.Drawing.Point(72, 291);
             this.longBreak15.Name = "longBreak15";
-            this.longBreak15.Size = new System.Drawing.Size(136, 23);
+            this.longBreak15.Size = new System.Drawing.Size(186, 35);
             this.longBreak15.TabIndex = 7;
             this.longBreak15.Text = "Long Break 15m";
             this.longBreak15.UseVisualStyleBackColor = true;
@@ -110,9 +143,15 @@ namespace TimeTracker
             // 
             // longbreak30
             // 
-            this.longbreak30.Location = new System.Drawing.Point(91, 260);
+            this.longbreak30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.longbreak30.AutoSize = true;
+            this.longbreak30.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.longbreak30.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.longbreak30.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.longbreak30.ForeColor = System.Drawing.SystemColors.Window;
+            this.longbreak30.Location = new System.Drawing.Point(72, 332);
             this.longbreak30.Name = "longbreak30";
-            this.longbreak30.Size = new System.Drawing.Size(136, 23);
+            this.longbreak30.Size = new System.Drawing.Size(186, 35);
             this.longbreak30.TabIndex = 8;
             this.longbreak30.Text = "Long Break 30m";
             this.longbreak30.UseVisualStyleBackColor = true;
@@ -120,9 +159,15 @@ namespace TimeTracker
             // 
             // btnSkip
             // 
-            this.btnSkip.Location = new System.Drawing.Point(91, 289);
+            this.btnSkip.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSkip.AutoSize = true;
+            this.btnSkip.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSkip.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSkip.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.btnSkip.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnSkip.Location = new System.Drawing.Point(98, 168);
             this.btnSkip.Name = "btnSkip";
-            this.btnSkip.Size = new System.Drawing.Size(136, 23);
+            this.btnSkip.Size = new System.Drawing.Size(136, 35);
             this.btnSkip.TabIndex = 9;
             this.btnSkip.Text = "Skip";
             this.btnSkip.UseVisualStyleBackColor = true;
@@ -130,9 +175,11 @@ namespace TimeTracker
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(311, 325);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.MidnightBlue;
+            this.ClientSize = new System.Drawing.Size(324, 414);
             this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.longbreak30);
             this.Controls.Add(this.longBreak15);
@@ -141,6 +188,7 @@ namespace TimeTracker
             this.Controls.Add(this.stop);
             this.Controls.Add(this.timerVisual);
             this.Controls.Add(this.Start);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Form1";
             this.Text = "Time Tracker ";
             this.ResumeLayout(false);
