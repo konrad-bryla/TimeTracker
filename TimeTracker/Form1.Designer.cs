@@ -59,7 +59,7 @@ namespace TimeTracker
             this.timerVisual.ReadOnly = true;
             this.timerVisual.Size = new System.Drawing.Size(180, 49);
             this.timerVisual.TabIndex = 3;
-            this.timerVisual.Text = "0";
+            this.timerVisual.Text = "00:00";
             this.timerVisual.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // stop

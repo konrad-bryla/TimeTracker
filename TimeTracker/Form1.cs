@@ -99,7 +99,7 @@ namespace TimeTracker
         {
             aTmr.Stop();
             time = 0;
-            timerVisual.Text = "0";   
+            timerVisual.Text = tsString(ts, time);
         }
 
         //converts time into "Minute:Seconds" using a TimeSpan 
