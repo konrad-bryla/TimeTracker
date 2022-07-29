@@ -10,15 +10,19 @@ namespace TimeTracker
 {
     public partial class Form1 : Form
     {
-        int time;
+        int time = 0;
+        TimeSpan ts;
         bool onBreak;
         SoundPlayer sPlayer = new SoundPlayer(Properties.Resources.shortAudio);
+
+        //Stops the timer at load so it does not automatically start counting down from 0
         public Form1()
         {
             InitializeComponent();
             aTmr.Stop();
         }
-
+        
+        //Starts the timer
         private void start_Click(object sender, EventArgs e)
         {
             if (time != 0) {
@@ -26,14 +30,19 @@ namespace TimeTracker
             } 
         }
 
+        //Stops the timer
         private void stop_Click(object sender, EventArgs e)
         {
             aTmr.Stop();
         }
 
+        //Called after every tick. Time is decreased by 1 and the timer visual is updated
+        //if statement validated if the last timer was part of a break or a work period
+        // two different message boxes are showed depending on if onBreak is true or false
         private void aTmr_Tick(object sender, EventArgs e)
         {
-            timerVisual.Text = time--.ToString();
+            time--;
+            timerVisual.Text = tsString(ts, time);
             if(time < 0 && onBreak == true)
             {
                 aTmr.Stop();
@@ -50,43 +59,55 @@ namespace TimeTracker
             }
         }
 
+        //Creates a 25 minute pomodoro work period
         private void pomodoro_Click(object sender, EventArgs e)
         {
             aTmr.Stop();
             time = 1500;
-            timerVisual.Text = "1500";
+            timerVisual.Text = tsString(ts, time);
         }
 
+        //Creates a 5 minute break
         private void shortBreak_Click(object sender, EventArgs e)
         {
             aTmr.Stop();
             time = 300;
-            timerVisual.Text = "300";
+            timerVisual.Text = tsString(ts, time);
             onBreak = true;
         }
 
+        //Creates a 15 minute break
         private void longBreak15_Click(object sender, EventArgs e)
         {
             aTmr.Stop();
             time = 900;
-            timerVisual.Text = "900";
+            timerVisual.Text = tsString(ts, time);
             onBreak = true;
         }
 
+        //Creates a 30 minute break
         private void longbreak30_Click(object sender, EventArgs e)
         {
             aTmr.Stop();
             time = 1800;
-            timerVisual.Text = "1800";
+            timerVisual.Text = tsString(ts, time);
             onBreak = true;
         }
 
+        //Skips the time only, onBreak is not changed
         private void btnSkip_Click(object sender, EventArgs e)
         {
             aTmr.Stop();
             time = 0;
-            timerVisual.Text = "0";
-            
+            timerVisual.Text = "0";   
+        }
+
+        //converts time into "Minute:Seconds" using a TimeSpan 
+        private static string tsString (TimeSpan ts, int time)
+        {
+            ts = TimeSpan.FromSeconds(time);
+
+            return ts.ToString(@"mm\:ss");
         }
     }
 }
