@@ -53,6 +53,7 @@ namespace TimeTracker
             }
             else if(time < 0)
             {
+                aTmr.Stop();
                 onBreak = true;
                 sPlayer.Play();
                 MessageBox.Show("Your pomodoro time is up, take a break. No secret work!", "Time for a Break");
