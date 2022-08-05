@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TimeTracker.exe" version="1.0.0.11" publicKeyToken="268daef7897d2eb3" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TimeTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TimeTracker.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimeTracker.exe" size="420320">
+      <assemblyIdentity name="TimeTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>LZ0fFPoyAMJX1YoWY3YaFlbdM4IPMyFKWNmgc7C3hMc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TimeTracker.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-JFQQS48\konra" issuerKeyHash="7291ab44dfe1b67401a9bbcdba0edea98de2e146" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>SWgFNVMqzoAJyDkmEdGFjA2KbsEh4jxtBoZi6ZSFrJE=</DigestValue></Reference></SignedInfo><SignatureValue>AIsUU4dR+KM4hQJoy2O/o0j/4EtqLR6A86lif+nbCp/NpR8baJpJG4QbjaX19IUqD2PHXid/jQdFuETwAfabXytpKW9ClCuB04pAZIOyQiLhcRGjfdA+axjI+BUKsyTE1qzTgsPfDzakKzRbGW5A0Jn5XTyFQXG34C06N8jQPwk=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>xp16fayeu/Ip0ckLLN2uC6pBodjikckZfMKSH+niHIjzQL/ZdedIObjLcs61x1y2A+t/ecNc39OaXKxPDVFlapqHA4ogxO4223v6j/ySJKQXzPpXWnJKqYiqinleA6F43w1bCEGvvSx0pxdCRxxJuVyPtOrem7kne5OeLe4HQWU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="91ac8594e96286066d3ce221c16e8a0d8c85d1112639c80980ce2a5335056849" Description="" Url=""><as:assemblyIdentity name="TimeTracker.exe" version="1.0.0.11" publicKeyToken="268daef7897d2eb3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-JFQQS48\konra</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>l0P03RTgxNhzxxlVqzr30F8wTwdLI/PFRPVO2upR6jQ=</DigestValue></Reference></SignedInfo><SignatureValue>JOqr+ZBbNrEVJvTMLjPZJWsZtczf2Z4lRvCKU9Kxbj8Buki2rtMV0sDOqJpvmSjvT9gu5/vsvgK0t/VCEaEVOIKMIE+PoywlHB9B4W72EoeXT+9cJQrAckDlEDgW9r6t7huGK2bl5VAm4+I09s6dk988D0i+RSPsV2iOVhD3I6Y=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>xp16fayeu/Ip0ckLLN2uC6pBodjikckZfMKSH+niHIjzQL/ZdedIObjLcs61x1y2A+t/ecNc39OaXKxPDVFlapqHA4ogxO4223v6j/ySJKQXzPpXWnJKqYiqinleA6F43w1bCEGvvSx0pxdCRxxJuVyPtOrem7kne5OeLe4HQWU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQN79w4hkrL5VMIWK2i1UOKzANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEoARgBRAFEAUwA0ADgAXABrAG8AbgByAGEwHhcNMjIwNzI1MjA1ODM1WhcNMjMwNzI2MDI1ODM1WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAEoARgBRAFEAUwA0ADgAXABrAG8AbgByAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMaden2snrvyKdHJCyzdrguqQaHY4pHJGXzCkh/p4hyI80C/2XXnSDm4y3LOtcdctgPrf3nDXN/TmlysTw1RZWqahwOKIMTuNtt7+o/8kiSkF8z6V1pySqmIqop5XgOheN8NWwhBr70sdKcXQkccSblcj7Tq3pu5J3uTni3uB0FlAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAdnh+43sxHqBzbrZ0IzbM64BCU4rKvXe+/yLqBrDW6JEFcnuSOMwYt0GqCEqWrXB+XpBhnYfUcfVTdhNG60evpRkjNfQrHUBBK18AqzQWbJtQDeV+BbUJFcA6NQc2i+jQgO4iHjH66sTm1JBmLfrrvGNDsNjztKCiGa/MUY5bHAk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
